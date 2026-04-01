@@ -1,0 +1,39 @@
+name: Sync Learning Issues
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'issues/*.md'
+      - 'github-ops/issues-plan.md'
+      - 'github-ops/milestones.md'
+      - 'github-ops/labels.md'
+  issues:
+    types: [opened, edited, reopened, closed, labeled, unlabeled]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync issues, milestones, labels, and project status
+        uses: actions/github-script@v7
+        env:
+          GH_PROJECT_TOKEN: ${{ secrets.GH_PROJECT_TOKEN }}
+          PROJECT_OWNER: ${{ vars.PROJECT_OWNER }}
+          PROJECT_NUMBER: ${{ vars.PROJECT_NUMBER }}
+        with:
+          github-token: ${{ secrets.GH_PROJECT_TOKEN || github.token }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const scriptPath = path.join(process.env.GITHUB_WORKSPACE, '.github/scripts/sync_learning_issues.js');
+            const code = fs.readFileSync(scriptPath, 'utf8');
+            eval(code);

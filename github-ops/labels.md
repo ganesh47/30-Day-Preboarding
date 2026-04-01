@@ -9,3 +9,5 @@
 - `reflection` — introspection and learning adjustments
 - `priority-high` — must-complete work for current week
 - `done` — completed and archived
+
+- `in-progress` — issue is actively being worked
