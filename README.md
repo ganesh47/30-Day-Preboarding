@@ -29,6 +29,7 @@ I am using this repository as a disciplined, public workspace to build operator-
 - `/learning-path/` — 4-week progression with weekly objectives and outputs.
 - `/tracker/` — daily logs, weekly reviews, and executive briefs.
 - `/github-ops/` — milestones, labels, and issue execution model.
+- `/github-ops/automation.md` — GitHub Actions automation for syncing issues, milestones, labels, and Kanban status.
 - `/play/` — quizzes, mini-cases, flashcards, and scoring.
 - `/leadership-view/` — strategic narrative and leadership discussion topics.
 - `/resources/` — reading list and reference links.

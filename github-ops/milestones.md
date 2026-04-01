@@ -1,5 +1,9 @@
 # Milestone Plan
 
+## Milestone: Day 0 - Baseline and System Setup
+- Outcome: establish execution cadence, baseline judgment, and measurable success criteria
+- Success criteria: complete issue 000 and publish Day 0 brief
+
 ## Milestone: Week 1 - Foundations
 - Outcome: map lending lifecycle and key risk drivers
 - Success criteria: complete issues 001-003 and one weekly brief

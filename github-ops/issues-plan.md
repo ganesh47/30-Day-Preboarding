@@ -1,6 +1,7 @@
 # Issues Plan
 
 ## Weekly milestone mapping
+- Day 0: Baseline setup and execution rules (Issue 000)
 - Week 1: Lending machine fundamentals (Issues 001-003)
 - Week 2: Corporate credit core (Issues 004-006)
 - Week 3: Monitoring and sector risk (Issues 007-008)
@@ -18,5 +19,6 @@ Each issue includes:
 
 ## Work rhythm
 - Open 1 issue/day
+- Add `in-progress` label when work starts so Kanban status moves to In Progress
 - Close only after artifact is committed
 - Add short end-of-day comment with key insight and next risk question
