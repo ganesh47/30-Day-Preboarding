@@ -7,7 +7,7 @@
 - [ ] Week 4 complete
 
 ## Day 0 setup tracker
-- [ ] 000-day-0-baseline-and-operating-rules
+- [x] 000-day-0-baseline-and-operating-rules
 
 ## Issue completion tracker
 - [ ] 001-map-the-lending-machine
